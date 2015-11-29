@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">NBK Sports</string>
+    <string name="create_profile">Create Profile</string>
+    <string name="location">Location</string>
+    <string name="sport">Sport</string>
+    <string name="level">Level</string>
+    <string name="user_name">User Name</string>
+    <string name="email">E-mail</string>
+    <string name="create">Create</string>
+    <string name="loginTitle">NBK Sports Login</string>
+    <string name="loginName">Name</string>
+    <string name="loginPass">Password</string>
+    <string name="loginLogin">Login</string>
+    <string name="loginCreate">Create Account</string>
+    <string name="loginForgotPass">Forgot your password?</string>
+    <string name="appName">App fixe</string>
+    <string name="mainSearch">Search</string>
+    <string name="mainCreate">Create</string>
+    <string name="mainMyEvents">My Events</string>
+    <string name="mainProfile">My Profile</string>
+    <string name="cancelEvent">Cancel Event</string>
+    <string name="numUser">Number of Participants</string>
+    <string name="MyEvent">Information about my event</string>
+    <string name="title_activity_search">Search</string>
+    <string name="createEvent">Create New Event</string>
+    <string name="date">Date</string>
+    <string name="playerNum">Player number</string>
+    <string name="dateLimit">Limit Date</string>
+    <string name="profile">Profile</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="minus">Delete</string>
+    <string name="plus">Add</string>
+    <string name="infoEvent">Event Details</string>
+    <string name="filter">Filter by</string>
+    <string name="eventList">Events List</string>
+
+</resources>
