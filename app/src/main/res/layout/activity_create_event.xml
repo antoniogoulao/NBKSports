@@ -46,7 +46,7 @@
             />
 
         <Spinner
-            android:id="@+id/sport3"
+            android:id="@+id/sport"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -57,7 +57,7 @@
             />
 
         <Spinner
-            android:id="@+id/level3"
+            android:id="@+id/level"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -72,17 +72,31 @@
             android:layout_height="wrap_content"
             android:text="@string/date"
             />
-        <EditText
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:inputType="date"
-            android:id="@+id/Date" />
+            android:orientation="horizontal">
+
+
+        <Spinner android:id="@+id/dateDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner android:id="@+id/dateMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner android:id="@+id/dateYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
@@ -90,40 +104,58 @@
             android:text="@string/playerNum"
             />
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:id="@+id/PlayerNumMin" />
+            android:id="@+id/PlayerNumMin"
+            android:hint="Minimum"/>
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:id="@+id/PlayerNumMax" />
+            android:id="@+id/PlayerNumMax"
+            android:hint="Maximum"/>
 
     </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dateLimit"
             />
-        <EditText
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/DateLimit" />
+            android:orientation="horizontal">
+
+
+            <Spinner android:id="@+id/dateDayL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner android:id="@+id/dateMonthL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner android:id="@+id/dateYearL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/create"
             android:onClick="createEvent"

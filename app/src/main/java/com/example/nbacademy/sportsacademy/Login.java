@@ -23,11 +23,19 @@ public class Login extends AppCompatActivity {
         EditText pass = (EditText)findViewById(R.id.Password);
         String uPassS = pass.getText().toString();
 
-        //Login validation
+        //Login validationD
+        if(uNameS.equals("") || uPassS.equals(""))
 
-        Intent i = new Intent(Login.this, MainMenu.class);
-        i.putExtra("uName", uNameS);
-        startActivity(i);
+        {
+            Toast.makeText(this, "Please insert usermane", Toast.LENGTH_SHORT).show();
+            uName.setText("");
+            pass.setText("");
+        } else {
+
+            Intent i = new Intent(Login.this, MainMenu.class);
+            i.putExtra("uName", uNameS);
+            startActivity(i);
+        }
     }
     public void createAccount(View view)
     {
@@ -41,6 +49,7 @@ public class Login extends AppCompatActivity {
     public void forgotPassword(View view)
     {
         //Send new pass to email
-        Toast.makeText(this, "Lulz", Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(Login.this, Forgotlogin.class);
+        startActivity(i);
     }
 }

@@ -37,4 +37,9 @@ public class MainMenu extends AppCompatActivity {
         //i.putExtra("uName", uNameS);
         startActivity(i);
     }
+
+    public void RateEvent(View view){
+        Intent i = new Intent(MainMenu.this, RateEvent.class);
+        startActivity(i);
+    }
 }

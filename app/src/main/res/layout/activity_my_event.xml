@@ -10,33 +10,28 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.nbacademy.sportsacademy.InfoEvent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/MyEvent"
-            />
         <TextView
             android:id="@+id/MyEvent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/MyEvent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
             />
 
-    </LinearLayout>
-
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingRight="@dimen/activity_horizontal_margin"
             android:text="@string/sport"
+            android:textStyle="bold"
             />
 
         <TextView
@@ -48,14 +43,16 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/level"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
             />
         <TextView
             android:id="@+id/level"
@@ -65,14 +62,16 @@
 
     </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/date"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
             />
         <TextView
             android:id="@+id/date"
@@ -82,14 +81,16 @@
 
     </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/location"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
             />
         <TextView
             android:id="@+id/location"
@@ -100,14 +101,16 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/numUser"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
             />
         <TextView
             android:id="@+id/numUser"
@@ -119,6 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cancelEvent"
+        android:layout_gravity="center_horizontal"
         android:onClick="cancelEvent"
         />
 </LinearLayout>

@@ -22,7 +22,9 @@
         <activity android:name=".Search" />
         <activity android:name=".CreateEvent" />
         <activity android:name=".Profile" />
-        <activity android:name=".MyEvents"></activity>
+        <activity android:name=".MyEvents"/>
+        <activity android:name=".Forgotlogin"/>
+        <activity android:name=".RateEvent"/>
     </application>
 
 </manifest>

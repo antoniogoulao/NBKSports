@@ -36,12 +36,12 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/filterLocal"
+                android:id="@+id/filterSport"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <Spinner
-                android:id="@+id/filterSport"
+                android:id="@+id/filterLocal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -57,6 +57,11 @@
 
             <Spinner
                 android:id="@+id/filterParticipants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/filterRank"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -84,6 +89,15 @@
             </LinearLayout>
 
         </LinearLayout>
+
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        android:id="@+id/ok"
+        android:layout_gravity="center_horizontal"
+        android:onClick="searchOk" />
 
 </LinearLayout>

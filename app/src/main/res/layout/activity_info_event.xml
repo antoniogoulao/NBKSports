@@ -110,7 +110,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cancelEvent"
+        android:text="@string/subscribeEvent"
+        android:layout_gravity="center_horizontal"
         android:onClick="cancelEvent"
         />
 </LinearLayout>

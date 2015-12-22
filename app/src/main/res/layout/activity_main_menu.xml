@@ -10,24 +10,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.nbacademy.sportsacademy.MainMenu">
 
-
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/app_name"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:paddingBottom="@dimen/activity_vertical_margin"
             android:layout_gravity="center_horizontal" />
-
-    </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -36,19 +26,23 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/mainSearch"
             android:onClick="goToSearch"
             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/mainCreate"
             android:onClick="goToCreate"
             />
-
-
     </LinearLayout>
 
     <LinearLayout
@@ -58,18 +52,37 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/mainMyEvents"
             android:onClick="goToMyEvents"
             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/mainProfile"
             android:onClick="goToProfile"
             />
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rateLastEvent"
+            android:onClick="RateEvent"
+            />
+    </LinearLayout>
+
 
 </LinearLayout>

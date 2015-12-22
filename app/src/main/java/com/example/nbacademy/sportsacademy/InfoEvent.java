@@ -27,17 +27,27 @@ public class InfoEvent extends AppCompatActivity {
         TextView location = (TextView)findViewById(R.id.location);
         location.setText("Sede Novabase");
 
-        TextView numUser = new TextView(getApplicationContext());
+        TextView numUser1 = new TextView(getApplicationContext());
+        TextView numUser2 = new TextView(getApplicationContext());
+        TextView numUser3 = new TextView(getApplicationContext());
+        TextView numUser4 = new TextView(getApplicationContext());
 
         LinearLayout listParticipants = (LinearLayout) findViewById(R.id.listParticipants);
-        numUser.setText("Suíço");
-        listParticipants.addView(numUser);
-        numUser.setText("MJ");
-        listParticipants.addView(numUser);
-        numUser.setText("Ramone");
-        listParticipants.addView(numUser);
-        numUser.setText("Quaresma17");
-        listParticipants.addView(numUser);
+        numUser1.setText("Suíço");
+        numUser1.setTextColor(getResources().getColor(R.color.colorGrey));
+        listParticipants.addView(numUser1);
+        numUser2.setText("MJ");
+        numUser2.setTextColor(getResources().getColor(R.color.colorGrey));
+        listParticipants.addView(numUser2);
+        numUser3.setText("Ramone");
+        numUser3.setTextColor(getResources().getColor(R.color.colorGrey));
+        listParticipants.addView(numUser3);
+        numUser4.setText("Quaresma17");
+        numUser4.setTextColor(getResources().getColor(R.color.colorGrey));
+        listParticipants.addView(numUser4);
     }
 
+    public void cancelEvent(View view) {
+        finish();
+    }
 }
